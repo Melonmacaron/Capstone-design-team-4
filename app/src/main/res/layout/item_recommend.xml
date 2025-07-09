@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- 🔁 FrameLayout → ImageView로 변경 -->
+    <ImageView
+        android:id="@+id/recommendImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="추천 이미지" />
+
+    <TextView
+        android:id="@+id/recommendText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="추천 설명"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 이미지 -->
+        <ImageView
+            android:id="@+id/imageClothing"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_clothes_1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- 카테고리 (대분류 + 소분류) -->
+        <!-- 카테고리 제목 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="카테고리"
+            android:textStyle="bold" />
+
+        <!-- 대분류/소분류 수평 배치 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/textMainCategory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="선택 안됨"
+                android:background="@drawable/bg_editable_field"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/textSubCategory"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="선택 안됨"
+                android:background="@drawable/bg_editable_field"
+                android:padding="12dp"
+                android:layout_marginStart="4dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+
+        <!-- 색상 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="색상"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- 기장 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기장"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textSubLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- 핏 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="핏"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textFit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- 소재 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소재"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/textMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- 소매기장 -->
+        <TextView
+            android:id="@+id/labelSleeve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소매기장"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textSleeve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- 옷깃 -->
+        <TextView
+            android:id="@+id/labelCollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="옷깃"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textCollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택 안됨"
+            android:background="@drawable/bg_editable_field"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- 저장 버튼 -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/plus_button_background"
+            android:text="저장"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

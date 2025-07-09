@@ -1,0 +1,8 @@
+<!-- res/menu/menu_closet.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_toggle_view"
+        android:title="전환"
+        android:icon="@drawable/ic_view_toggle"
+        android:showAsAction="always"/>
+</menu>

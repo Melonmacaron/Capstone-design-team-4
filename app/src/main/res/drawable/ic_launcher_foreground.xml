@@ -1,0 +1,8 @@
+<!-- drawable/ic_launcher_foreground.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/main"
+            android:gravity="fill" />
+    </item>
+</layer-list>

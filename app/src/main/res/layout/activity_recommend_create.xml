@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 스크롤 가능한 본문 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginBottom="72dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="64dp"> <!-- ✅ 전체 아래로 내림 -->
+
+            <!-- ✅ TPO 선택 제목 텍스트 -->
+            <TextView
+                android:id="@+id/labelTpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TPO 선택"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- TPO 선택 영역 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="80dp"> <!-- ✅ 옷 선택과 거리 늘림 -->
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTpoLine1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton android:text="데일리" style="@style/TpoPillToggle" android:layout_marginEnd="6dp"/>
+                    <RadioButton android:text="직장" style="@style/TpoPillToggle" android:layout_marginEnd="6dp"/>
+                    <RadioButton android:text="데이트" style="@style/TpoPillToggle" android:layout_marginEnd="6dp"/>
+                    <RadioButton android:text="경조사" style="@style/TpoPillToggle" android:layout_marginEnd="0dp"/>
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTpoLine2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <RadioButton android:text="여행" style="@style/TpoPillToggle" android:layout_marginEnd="6dp"/>
+                    <RadioButton android:text="파티" style="@style/TpoPillToggle" android:layout_marginEnd="6dp"/>
+                    <RadioButton android:text="운동" style="@style/TpoPillToggle" android:layout_marginEnd="0dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- 옷 선택 버튼과 텍스트 수직 배치 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="48dp">
+
+                <ImageButton
+                    android:id="@+id/buttonSelectClothing"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:background="@drawable/rectangle_with_plus"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="선택된 옷"
+                    android:padding="0dp" />
+
+                <TextView
+                    android:id="@+id/textSelectClothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="옷 선택"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 하단 고정 추천 보기 버튼 -->
+    <Button
+        android:id="@+id/buttonShowRecommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/plus_button_background"
+        android:layout_marginBottom="16dp"
+        android:text="추천 보기"
+        android:textSize="18sp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp" />
+</FrameLayout>
